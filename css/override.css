@@ -1,0 +1,53 @@
+/* Service Section */
+
+.item-lists {
+	margin-top: 0px;
+}
+
+.iconic-item {
+	margin-bottom: 35px;
+}
+
+#services-header {
+	margin-top: -40px;
+	margin-bottom: 70px;
+}
+
+/* Portfolio Section */
+
+#portfolio-header {
+	margin-top: -40px;
+	margin-bottom: 70px;
+}
+
+.slider-details {
+	height: 150px;
+	width: inherit;
+}
+
+.slider-details > ul {
+	display: inline-block;
+	list-style: none;
+}
+
+.portfolio-item:hover .portfolio-hover .action-btn  {
+	margin-top: -85px;
+}
+
+/* About Section */
+
+.about-text {
+	text-align: left;
+}
+
+/* Custom Responsive */
+
+@media (max-width: 991px) {
+	#services-header {
+		margin-bottom: 30px;
+	}
+
+	.item-lists {
+		margin-top: 40px;
+	}
+}

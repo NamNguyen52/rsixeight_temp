@@ -31,13 +31,13 @@ a.btn-bordered:hover {
 }
 
 .r68-logo {
-	max-width: 590px;
-	height: 350px;
-	background-image: url('../img/r68_logo_587x320.png');
+	max-width: 1500px;
+	height: 970px;
+	background-image: url('../img/r68_logo_1760x960.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
-	margin: 150px auto 0 auto;
+	margin: 100px auto 0 auto;
 }
 
 /* Portfolio Section */
@@ -63,6 +63,15 @@ a.btn-bordered:hover {
 
 .portfolio-item:hover .portfolio-hover .action-btn  {
 	margin-top: -85px;
+}
+
+#dunklez {
+	background-image: url('../img/projects/dunklez/screenshot_2.png');
+	background-position: 50% 5%;
+}
+
+#dunklez > img {
+	opacity: 0;
 }
 
 /* About Section */

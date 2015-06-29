@@ -1,19 +1,50 @@
-/* Service Section */
+/* Top nav */
 
-.item-lists {
-	margin-top: 0px;
+.top-bar {
+	background: transparent;
+	box-shadow: none;
+	-webkit-transition: all 0.5s ease-out 0s;
+	-moz-transition: all 0.5s ease-out 0s;
+	-ms-transition: all 0.5s ease-out 0s;
+	-o-transition: all 0.5s ease-out 0s;
+	transition: all 0.5s ease-out 0s;
 }
 
-.iconic-item {
-	margin-bottom: 35px;
+.scrolled {
+	background: #fff;
 }
 
-#services-header {
-	margin-top: -40px;
-	margin-bottom: 70px;
+/* banner section */
+
+.banner-parallax {
+	background-image: url('../img/bg.jpg');
+}
+
+a.btn-bordered {
+	border: black 1px solid;
+	color: black;
+}
+
+a.btn-bordered:hover {
+	background: black;
+	color: white; 
+}
+
+.r68-logo {
+	max-width: 590px;
+	height: 350px;
+	background-image: url('../img/r68_logo_587x320.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 150px auto 0 auto;
 }
 
 /* Portfolio Section */
+
+#portfolio {
+	background-color: #f5f5f5;
+}
 
 #portfolio-header {
 	margin-top: -40px;
@@ -36,8 +67,21 @@
 
 /* About Section */
 
+.about-section {
+	background-color: white;
+}
+
 .about-text {
 	text-align: left;
+}
+
+/* Maps Styling */
+
+.maps-container {
+	height: 300px;
+	width: 100%;
+	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=4740+Green+River+Rd,+Corona,+CA+92880&zoom=15&markers=color:red%7Clabel:RSixEight%7C33.8770894,-117.6607705&size=600x300&scale=2);
+	background-position: 50% 50%;
 }
 
 /* Custom Responsive */

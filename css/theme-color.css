@@ -32,7 +32,7 @@ a#cancel-comment-reply-link,
 .cd-popular .cd-pricing-header,
 .cd-popular .cd-currency,
 .cd-popular .cd-duration {
-    color:#31bfc3 ;
+    color:#447dff;
 }
 
 
@@ -73,7 +73,7 @@ a#cancel-comment-reply-link,
 .cd-hero-slider .cd-btn.secondary:hover,
 .cd-popular .cd-btn,
 #royal_preloader.royal_preloader_progress .royal_preloader_meter{
-    background: #31bfc3;
+    background: #447dff;
 }
 
 
@@ -90,5 +90,5 @@ a#cancel-comment-reply-link,
 .custom-pagination > .active > span:hover,
 .custom-pagination > .active > a:focus,
 .custom-pagination > .active > span:focus {
-    border-color: #31bec3;
+    border-color: #447dff
 }

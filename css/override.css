@@ -65,15 +65,6 @@ a.btn-bordered:hover {
 	margin-top: -85px;
 }
 
-#dunklez {
-	background-image: url('../img/projects/dunklez/screenshot_2.png');
-	background-position: 50% 5%;
-}
-
-#dunklez > img {
-	opacity: 0;
-}
-
 /* About Section */
 
 .about-section {

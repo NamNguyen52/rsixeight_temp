@@ -148,13 +148,13 @@
                 $('.portfolio-slider').flexslider({
                     animation: "slide",
                     direction: "vertical",
-                    slideshowSpeed: 3000
+                    slideshowSpeed: 4000
                 });
 
                 $('.portfolio-slider-alt').flexslider({
                     animation: "slide",
                     direction: "horizontal",
-                    slideshowSpeed: 4000
+                    slideshowSpeed: 5000
                 });
 
                 $container.isotope({
@@ -169,7 +169,8 @@
                 $('.portfolio-slider, .portfolio-slider-alt').each(function () { // the containers for all your galleries
                     var _items = $(this).find("li > a");
                     var items = [];
-                    for (var i = 0; i < _items.length; i++) {
+                    var image_counter = _items.length - ((_items.length - 4)/2);
+                    for (var i = 0; i <= image_counter; i++) {
                         items.push({src: $(_items[i]).attr("href"), title: $(_items[i]).attr("title")});
                     }
                     $(this).parent().find(".action-btn").magnificPopup({
@@ -187,7 +188,6 @@
                         }
                     });
                 });
-
             });
         }
 

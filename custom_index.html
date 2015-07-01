@@ -656,55 +656,6 @@
                 separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
                 speed: 3000 // How many milliseconds until the next word show.
             });
-
-            var $container = $('.portfolio');
-            if ($.fn.imagesLoaded && $container.length > 0) {
-                imagesLoaded($container, function () {
-                    $('.portfolio-slider').flexslider({
-                        animation: "slide",
-                        direction: "vertical",
-                        slideshowSpeed: 4000
-                    });
-
-                    $('.portfolio-slider-alt').flexslider({
-                        animation: "slide",
-                        direction: "horizontal",
-                        slideshowSpeed: 5000
-                    });
-
-                    $container.isotope({
-                        itemSelector: '.portfolio-item',
-                        layoutMode: 'fitRows',
-                        filter: '*'
-                    });
-
-                    $(window).trigger("resize");
-                    // filter items on button click
-
-                    $('.portfolio-slider, .portfolio-slider-alt').each(function () { // the containers for all your galleries
-                        var _items = $(this).find("li > a");
-                        var items = [];
-                        var image_counter = _items.length - ((_items.length - 4)/2);
-                        for (var i = 0; i <= image_counter; i++) {
-                            items.push({src: $(_items[i]).attr("href"), title: $(_items[i]).attr("title")});
-                        }
-                        $(this).parent().find(".action-btn").magnificPopup({
-                            items: items,
-                            type: 'image',
-                            gallery: {
-                                enabled: true
-                            }
-                        });
-                        $(this).parent().find(".portfolio-description").magnificPopup({
-                            items: items,
-                            type: 'image',
-                            gallery: {
-                                enabled: true
-                            }
-                        });
-                    });
-                });
-            }
         });
     </script>
 

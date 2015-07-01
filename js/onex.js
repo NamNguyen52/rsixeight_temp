@@ -169,8 +169,9 @@
                 $('.portfolio-slider, .portfolio-slider-alt').each(function () { // the containers for all your galleries
                     var _items = $(this).find("li > a");
                     var items = [];
-                    var image_counter = _items.length - ((_items.length - 4)/2);
-                    for (var i = 0; i <= image_counter; i++) {
+                    var adjLength = _items.length - 4;
+                    var correctLength = adjLength / 2;
+                    for (var i = 0; i < correctLength; i++) {
                         items.push({src: $(_items[i]).attr("href"), title: $(_items[i]).attr("title")});
                     }
                     $(this).parent().find(".action-btn").magnificPopup({

@@ -16,13 +16,21 @@
 
 .logo, .retina-logo {
 	font-family: 'Ubuntu';
-	font-size: 18px;
-	color: #A4A3A3;
+	font-size: 15px;
+	/*color: #A4A3A3;*/
+	color: #848484;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
-.logo-accent {
+.nav-logo-accent {
 	color: #0090d3;
+	font-size: 18px;
 }
+
+/* services section */
+
+
 
 /* banner section */
 
@@ -97,7 +105,7 @@ a.btn-bordered:hover {
 }
 
 .img-mid {
-	background-image: url('../img/test_img.jpg');
+	background-image: url('../img/about_image.jpg');
 	background-size: cover;
 	background-position: 50% 80%;
 	height: 500px;
@@ -110,7 +118,7 @@ a.btn-bordered:hover {
 .maps-container {
 	height: 300px;
 	width: 100%;
-	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=4740+Green+River+Rd,+Corona,+CA+92880&zoom=15&markers=color:red%7Clabel:RSixEight%7C33.8770894,-117.6607705&size=1000x700&scale=2);
+	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=4740+Green+River+Rd,+Corona,+CA+92880&zoom=14&markers=color:red%7Clabel:RSixEight%7C33.8770894,-117.6607705&size=1000x700&scale=2);
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -126,6 +134,14 @@ a.btn-bordered:hover {
 
 .footer-logo {
 	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 40px;
+}
+
+.footer-logo-accent {
+	color: #0090d3;
+	font-size: 50px;
 }
 
 .footer-address {
@@ -134,10 +150,7 @@ a.btn-bordered:hover {
 
 .footer-address p {
 	line-height: 13px;
-}
-
-.footer-logo {
-	font-size: 50px;
+	text-transform: uppercase;
 }
 
 /* Custom Responsive */

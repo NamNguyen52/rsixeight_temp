@@ -936,6 +936,7 @@ a.left-toggle {
     transition:300ms ease-in-out;
     border-radius: 5px;
 }
+
 .rotate-boxed-intro:hover .icon-box .icon, .rotate-boxed-intro.active .icon-box .icon {
     -webkit-transition:300ms ease-in-out;
     -moz-transition:300ms ease-in-out;

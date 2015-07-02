@@ -10,9 +10,9 @@ $(document).scroll(function(){
 
 $("#map-info-toggle").hover(
   function () {
-    $("#map-marker-info-box").css('display', 'block');
+    $("#map-marker-info-box").animate({'opacity': '1'}, 400);
   }, 
   function () {
-    $("#map-marker-info-box").css('display', 'none');
+    $("#map-marker-info-box").animate({'opacity': '0'}, 400);
   }
 );

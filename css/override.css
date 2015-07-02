@@ -148,7 +148,8 @@ a.btn-bordered:hover {
 }
 
 #map-marker-info-box {
-	display: none;
+	display: block;
+	opacity: 0;
 	margin-left: 50px;
 	background-color: white;
 	box-shadow: 2px 2px 2px #888888;

@@ -28,6 +28,10 @@
 	font-size: 18px;
 }
 
+.logo:hover {
+	color: #848484;
+}
+
 /* services section */
 
 .service-logo-accent {
@@ -57,7 +61,7 @@ a.btn-bordered:hover {
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
-	margin: 100px auto 0 auto;
+	margin: 10vh auto 0 auto;
 }
 
 /* Portfolio Section */
@@ -83,6 +87,11 @@ a.btn-bordered:hover {
 
 .portfolio-item:hover .portfolio-hover .action-btn  {
 	margin-top: -85px;
+}
+
+.portfolio-item:hover .portfolio-hover .portfolio-description {
+	bottom: 50%;
+    margin-bottom: -125px;
 }
 
 .dogwood-logo-container {
@@ -118,9 +127,9 @@ a.btn-bordered:hover {
 /* Maps Styling */
 
 .maps-container {
-	height: 300px;
+	height: 400px;
 	width: 100%;
-	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=4740+Green+River+Rd,+Corona,+CA+92880&zoom=14&markers=color:red%7Clabel:RSixEight%7C33.8770894,-117.6607705&size=1000x700&scale=2);
+	background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=4740+Green+River+Rd,+Corona,+CA+92880&zoom=14&markers=color:blue%7Clabel:RSixEight%7C33.8770894,-117.6607705&size=1000x700&scale=2&maptype=roadmap&style=feature:all);
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -161,6 +170,20 @@ a.btn-bordered:hover {
 	text-align: center;
 }
 
+/* Contact Us */
+
+address > ul {
+	list-style: none;
+}
+
+address > ul > li {
+	margin-bottom: 10px;
+}
+
+address > ul > li:nth-child(1) > h5 {
+	margin-top: 0px;
+}
+
 /* Footer */
 
 .footer {
@@ -192,11 +215,26 @@ a.btn-bordered:hover {
 /* Custom Responsive */
 
 @media (max-width: 991px) {
-	#services-header {
-		margin-bottom: 30px;
+
+	address > ul {
+		padding-left: 0px;
 	}
 
-	.item-lists {
-		margin-top: 40px;
+	address > ul li:nth-child(1) {
+		display: none;
+	}
+
+	.r68-logo {
+		margin-top: 20vh;
+	}
+}
+
+@media (max-width: 768px) {
+	#about-image {
+		height: 262px;
+		width: 300px;
+	}
+	.maps-container {
+		height: 300px;
 	}
 }

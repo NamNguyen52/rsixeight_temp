@@ -125,6 +125,39 @@ a.btn-bordered:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	padding-top: 50px;
+
+}
+
+.map-marker-info {
+	position: relative;
+	height: 150px;
+	width: 50px;
+	margin: 0 auto;
+}
+
+.display-map-info {
+	display: block;
+}
+
+.map-marker-info span {
+	display: block;
+	height: 180px;
+	width: 200px;
+	padding: 25px 5px 5px 5px;
+}
+
+#map-marker-info-box {
+	display: none;
+	margin-left: 50px;
+	background-color: white;
+	box-shadow: 2px 2px 2px #888888;
+}
+
+#map-marker-info-box p {
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
 }
 
 /* Footer */

@@ -212,6 +212,14 @@ address > ul > li:nth-child(1) > h5 {
 	text-transform: uppercase;
 }
 
+.footer-address p > a {
+	color: #808080;
+}
+
+.footer-address p > a:hover {
+	color: #808080;
+}
+
 /* Custom Responsive */
 
 @media (max-width: 991px) {

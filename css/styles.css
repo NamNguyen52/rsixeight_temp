@@ -619,8 +619,8 @@ a.left-toggle {
 }
 
 .banner-parallax {
-    background-image: url("../img/banner1.jpg");
-    /*background-repeat: no-repeat;*/
+    /*background-image: url("../img/banner1.jpg");*/
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0px;
     background-attachment: fixed;

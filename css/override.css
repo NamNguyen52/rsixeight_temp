@@ -250,4 +250,13 @@ address > ul > li:nth-child(1) > h5 {
 	.maps-container {
 		height: 300px;
 	}
+	#services-header {
+		font-size: 23px;
+	}
+	.section-heading:after, .section-heading.light:after {
+		display: none;
+	}
+	.section-heading:before, .section-heading.light:before {
+		display: none;
+	}
 }

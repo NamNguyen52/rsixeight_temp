@@ -7,3 +7,4 @@ $(document).scroll(function(){
     $('.top-bar').removeClass('scrolled');
   }
 });
+

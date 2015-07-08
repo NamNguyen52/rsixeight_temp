@@ -90,7 +90,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="rotate-boxed-intro wow fadeInLeft">
+                            <div class="rotate-boxed-intro wow fadeInLeft" >
                                 <div class="icon-box">
                                     <span class="icon">
                                         <i class="icon-paintbrush"></i>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="rotate-boxed-intro  wow fadeInUp">
+                            <div class="rotate-boxed-intro  wow fadeInUp" >
                                 <div class="icon-box">
                                     <span class="icon">
                                         <i class=" icon-genius"></i>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="rotate-boxed-intro  wow fadeInRight">
+                            <div class="rotate-boxed-intro  wow fadeInRight" >
                                 <div class="icon-box">
                                     <span class="icon">
                                         <i class="icon-desktop"></i>
@@ -510,45 +510,63 @@
                         </p>
                     </div>
                     <div class="contact-form">
-                        <form method='post' name='rsixeight_email_form' action='contact_form.php'>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control onex-input" name="name" placeholder="Name">
-                                    <input type="email" class="form-control onex-input" name="email" placeholder="Email">
-                                    <input type="text" class="form-control onex-input" name="subject" placeholder="Subject">
-                                </div>
-                                <div class="col-md-5">
-                                    <textarea class="form-control onex-textarea contact-message" placeholder="Message" name="message"></textarea>
-                                </div>
-                                <div class="col-md-3">
-                                    <address>
-                                        <ul>
-                                            <li><h5><b>Contact Info</b></h5></li>
-                                            <li>
-                                                <span class="glyphicon glyphicon-home"></span>
-                                                4740 Green River Road, Ste. 213, Corona, CA 92880
-                                            </li>
-                                            <li>
-                                                <span class="glyphicon glyphicon-envelope"></span>
-                                                <a href="mailto:info@rsixeight.com">info@rsixeight.com</a>
-                                            </li>
-                                            <li>
-                                                <span class="glyphicon glyphicon-earphone"></span>
-                                                <a href="tel:+18444504768">(844) 450-4768</a>
-                                            </li>
-                                        </ul>
-                                    </address>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="contact-form-action">
-                                        <a href="#" class="btn btn-bg-color" name="submit">
-                                            Send Message </a>
+                        <?php
+                        $action=$_REQUEST['action'];
+                        if ($action=="")
+                            {
+                            ?>   
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="hidden" name="action" value="submit">
+                                        <input type="text" class="form-control onex-input" value="" name="name" placeholder="Name">
+                                        <input type="email" class="form-control onex-input" value="" name="email" placeholder="Email">
+                                        <input type="text" class="form-control onex-input" value="" name="subject" placeholder="Subject">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <textarea class="form-control onex-textarea contact-message" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <address>
+                                            <ul>
+                                                <li><h5><b>Contact Info</b></h5></li>
+                                                <li>
+                                                    <span class="glyphicon glyphicon-home"></span>
+                                                    4740 Green River Road, Ste. 213, Corona, CA 92880
+                                                </li>
+                                                <li>
+                                                    <span class="glyphicon glyphicon-envelope"></span>
+                                                    <a href="mailto:info@rsixeight.com">info@rsixeight.com</a>
+                                                </li>
+                                                <li>
+                                                    <span class="glyphicon glyphicon-earphone"></span>
+                                                    <a href="tel:+18444504768">(844) 450-4768</a>
+                                                </li>
+                                            </ul>
+                                        </address>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="contact-form-action">
+                                            <input type="submit" value="Send email" class="btn btn-bg-color" name="submit"/>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </form>
+                            <?php
+                            }
+                        else
+                            {
+                            $name=$_REQUEST['name'];
+                            $email=$_REQUEST['email'];
+                            $message=$_REQUEST['message'];
+                            $subject=$_REQUEST['subject'];
+                          
+                            $from="From: $name $email";
+                            mail("namnguyen@rsixeight.com", $subject, $message, $from);
+                            }
+                        ?>    
                     </div>
                 </div>
             </section>

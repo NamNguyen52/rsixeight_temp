@@ -1,15 +1,21 @@
-<?php 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
+<?php
+
+// Define some constants
+define( "RECIPIENT_NAME", "Nam Nguyen" );
+define( "RECIPIENT_EMAIL", "namnguyen@rsixeight.com" );
+
+// Read the form values
+
+$senderName = $_POST['senderName']; 
+$senderEmail = $_POST['senderEmail'];
 $message = $_POST['message'];
+$subject = $_POST['senderSubject']; 
 
-$email_from = $name;
-$email_subject = $subject;
-$email_body = $message;
+// If all values exist, send the email
+if ( $senderName && $senderEmail && $message ) {
+  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
+  $headers = "From: " . $senderName . " <" . $senderEmail . ">";
+  mail( $recipient, $subject, $message, $headers );
+}
 
-$to = 'namnguyen@r68.co';
-$headers = 'From: $email_from \r\n';
-
-mail($to, $email_subject, $email_body, $headers);
 ?>

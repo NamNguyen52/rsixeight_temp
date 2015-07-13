@@ -366,9 +366,7 @@
         </section>
         <!--about section end-->
 
-        <section id="google-maps">
-            <div class="maps-container"></div>
-        </section>
+        <div class="maps-container" id="google-maps"></div>
 
         <!--contact section start-->
         <section id="contact">
@@ -591,6 +589,8 @@
     <script src="js/wow.min.js"></script>
     <script src="js/onex.js?v=1"></script>
     <script src="js/custom.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="js/gmaps.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -602,20 +602,20 @@
             });
         });
 
-        function submitForm() {
-            $.ajax( {
-              url: contactForm.attr( 'action' ) + "?ajax=true",
-              type: contactForm.attr( 'method' ),
-              data: contactForm.serialize(),
-              success: function() {
-                console.log('success');
-              },
-              failure: function() {
-                consol.log('failed');
-              }
-            } );
-            return false;    
-        }
+        var map = new GMaps({
+          div: '#google-maps',
+          lat: 33.8770894,
+          lng: -117.6607705
+        });
+
+        map.addMarker({
+          lat: 33.8770894,
+          lng: -117.6607705,
+          title: 'RSixEight',
+          infoWindow: {
+            content: '<h1>Hello World</h1>'
+          }
+        })
     </script>
 
 </body>

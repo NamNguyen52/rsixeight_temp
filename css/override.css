@@ -42,7 +42,6 @@
 
 .banner-parallax {
 	background-image: url('../img/bg.jpg');
-	/*min-height: 100%;*/
 	width: 100%;
 	height: auto;
 	top: 0;
@@ -100,7 +99,7 @@ a.btn-bordered:hover {
 
 .portfolio-item:hover .portfolio-hover .portfolio-description {
 	bottom: 50%;
-    margin-bottom: -125px;
+    margin-bottom: -155px;
 }
 
 .dogwood-logo-container {
@@ -147,43 +146,24 @@ a.btn-bordered:hover {
 /* Maps Styling */
 
 .maps-container {
-	height: 400px;
+	height: 350px;
 	width: 100%;
 	position: relative;
 	padding-top: 50px;
 }
 
-.map-marker-info {
+/*.maps-container {
+	height: auto;
+	width: 100%;
+}
+
+.maps-overlay {
+	height: 400px;
+	width: 100%;
 	position: relative;
-	height: 150px;
-	width: 50px;
-	margin: 0 auto;
-}
-
-.display-map-info {
-	display: block;
-}
-
-.map-marker-info span {
-	display: block;
-	height: 180px;
-	width: 200px;
-	padding: 25px 5px 5px 5px;
-}
-
-#map-marker-info-box {
-	display: block;
-	opacity: 0;
-	margin-left: 50px;
-	background-color: white;
-	box-shadow: 2px 2px 2px #888888;
-}
-
-#map-marker-info-box p {
-	font-size: 12px;
-	line-height: 15px;
-	text-align: center;
-}
+	padding-top: 50px;
+	pointer-events: none;
+}*/
 
 /* Contact Us */
 

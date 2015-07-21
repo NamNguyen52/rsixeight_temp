@@ -16,6 +16,7 @@ if ( $senderName && $senderEmail && $message ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $senderName . " <" . $senderEmail . ">";
   mail( $recipient, $subject, $message, $headers );
+  header('Location: localhost:8000/custom_index.html'); 
 }
 
 ?>

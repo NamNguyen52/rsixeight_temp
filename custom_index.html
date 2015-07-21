@@ -444,12 +444,15 @@
                                         <div class="col-sm-4"></div>
                                         <div class="col-sm-4">
                                             <div class="contact-form-action">
-                                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-bg-color"/>
+                                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-bg-color" onclick="contactFormAnimate()" />
                                             </div>    
                                         </div>
                                         <div class="col-sm-2"></div>
                                     </div>
                                 </form>
+                                <div style="display: none;" id="form-submit-thanks">
+                                    <h1 class="text-center">Thank you.</h1>
+                                </div>
                             </div>
                             <div class="col-sm-3">
                                  <address>
@@ -649,7 +652,8 @@
           zoom: 12,
           lat: 33.8770894,
           lng: -117.6607705,
-          scrollwheel: false
+          scrollwheel: false,
+          draggable: false
         });
 
         map.addMarker({

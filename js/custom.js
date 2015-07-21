@@ -31,3 +31,10 @@ $(document).ready(function() {
 	    });
 	});	
 });
+
+var contactFormAnimate = function() {
+	$('#contactForm').fadeOut('slow');
+	setInterval(function(){
+		$('#form-submit-thanks').fadeIn();
+	},1000)
+};

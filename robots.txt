@@ -1,0 +1,3 @@
+Sitemap: http://www.rsixeight.com/sitemap.xml
+User-agent: *
+Disallow:

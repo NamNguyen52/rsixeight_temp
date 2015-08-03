@@ -1,22 +1,15 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "Jason Killelea" );
-define( "RECIPIENT_EMAIL", "info@rsixeight.com" );
+define( "RECIPIENT_EMAIL", "info@rsixeight.com");
 
 // Read the form values
+$message = "From: " . $_POST['senderName'] . "\nEmail: " . $_POST['senderEmail'] . "\nSubject: " . $_POST['senderSubject'] . "\nMessage: " . $_POST['message'];
+$subject = 'Website Contact Request'; 
 
-$senderName = $_POST['senderName']; 
-$senderEmail = $_POST['senderEmail'];
-$message = $_POST['message'];
-$subject = $_POST['senderSubject']; 
-
-// If all values exist, send the email
-if ( $senderName && $senderEmail && $message ) {
-  $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $senderName . " <" . $senderEmail . ">";
-  mail( $recipient, $subject, $message, $headers );
-  header('Location: localhost:8000/custom_index.html'); 
-}
+$recipient = RECIPIENT_EMAIL;
+$headers = "From: Webmaster@rsixeight.com";
+mail( $recipient, $subject, $message, $headers );
+header('Location: http://www.r6ixei8ht.com/index.html'); 
 
 ?>
